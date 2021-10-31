@@ -76,10 +76,14 @@ public class Ex21 {
     public static double caseE(int[][] array, int n) {
 
         double productSum = 0;
+        double product = 1;
+        double sum = 1;
 
         for (int k = 1; k <= n; k++) {                               //loop dla k<= n <-- podane dla sprawdzenia
             for (int i = 1; i <= k; i++) {                          //nested loop dla i<=k
-                productSum = (productSum + k) + (productSum * i);  //przypisujemy zmiennej wartosci (zmienna+k) + (zmienna*i)
+                sum = sum + k;                                     //dodajemy sumy
+                product = product * i;                            //operacja silni
+                productSum = product + sum;                      //przypisujemy zmiennej wartosci sum + product
             }
         }
         return productSum;
@@ -90,10 +94,14 @@ public class Ex21 {
     public static double caseF(int[][] array, int n) {
 
         double productSum = 0;
+        double sum = 1;
+        double product = sum;
 
         for (int k = 1; k <= n; k++) {                               //loop dla k<=n
             for (int i = k; i <= n; i++) {                          //nested loop dla i<=n i i=k
-                productSum = (productSum + k) + (productSum * i);  //przypisujemy zmiennej wartosci (zmienna+k) + (zmienna*i)
+                sum = sum + k;                                     //dodajemy sumy
+                product = product * i;                            //operacja silni
+                productSum = product + sum;                      //przypisujemy zmiennej wartosci (zmienna+k) + (zmienna*i)
             }
         }
         return productSum;
