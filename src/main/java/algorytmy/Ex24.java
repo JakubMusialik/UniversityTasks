@@ -37,4 +37,17 @@ public class Ex24 {
 1.Sprawdź czy liczba jest parzysta.
 2.Jeśli tak  = wróc do punktu 1. Jeśli nie = sprawdź czy liczba jest równa 1.
 3.Jeśli tak = udaj się do mety. Jeśli nie = pomnóż ją przez 3, dodaj 1 i całośc podziel przez 2 a następie wróc do punktu 1.
+
+for(zmienna j, j mniejsze od i, zwiekszaj j co obrot){
+if(i parzyste){
+podziel i przez 2
+zwieksz licznik
+}else if(i nieparzyste i rozne od 1){
+i razy 3 dodaj 1 i podziel przez 2
+zwieksz licznik
+}else if(i rowne 1){
+zwieksz licznik
+}
+
+zwroc licznik == liczbie przejsc przez szare pole
 */
