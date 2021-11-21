@@ -1,2 +1,2 @@
 # UniversityTasks
-Algorithms and data structures exercises
+Repo for all exercises at university
