@@ -19,7 +19,7 @@ public class primeNumber {
         b = sc.nextInt();
 
 
-        System.out.printf("\nPrime numbers z przedzialu %d i %d to: ", a, b);
+        System.out.printf("\nLiczby pierwsze z przedzialu %d i %d to: ", a, b);
 
 
         for (i = a; i <= b; i++) {
