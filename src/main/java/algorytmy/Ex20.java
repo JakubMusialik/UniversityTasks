@@ -1,4 +1,4 @@
-package exercises;
+package algorytmy;
 
 /*ZLOZONOSC TEGO ALGORYTMU 3N*/
 

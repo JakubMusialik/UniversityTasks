@@ -1,4 +1,4 @@
-package exercises;
+package algorytmy;
 
 /*ZLOZONOSC ALGORYTMU 2N*/
 

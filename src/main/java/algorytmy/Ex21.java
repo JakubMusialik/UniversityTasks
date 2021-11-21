@@ -1,4 +1,4 @@
-package exercises;
+package algorytmy;
 
 public class Ex21 {
     public static void main(String[] args) {
