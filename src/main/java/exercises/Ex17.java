@@ -1,4 +1,4 @@
-package algorytmy;
+package exercises;
 
 import java.util.Arrays;
 
@@ -22,7 +22,7 @@ public class Ex17 {
         int minOddValue = Integer.MAX_VALUE;
 
         for (int i = 0; i < array.length; i++) {                                               //loop po tablicy
-            if (array[i] % 2 == 0 || array[i] == 0 && maxEvenValue < array[i]) {              //warunek jesli index jest parzysty i wiekszy od zmiennej
+            if (array[i] % 2 == 0 || array[i] == 0 && maxEvenValue < array[i]) {              //warunek jesli index jest parzysty lub rowny 0 i wiekszy od zmiennej
                 maxEvenValue = array[i];                                                     //przypisz wartosc indexu do zmiennej <-- element najwikeszy wsrod licz parzystych
 
             } else if (array[i] % 2 != 0 && minOddValue > array[i]) {                      //warunek jesli index jest nieparzysty i mniejszy od zmiennej

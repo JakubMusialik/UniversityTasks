@@ -1,6 +1,6 @@
-package algorytmy;
+package exercises;
 
-/*ZLOZONOSC ALGORYTMU 2*/
+/*ZLOZONOSC ALGORYTMU 2N*/
 
 public class Ex11 {
     public static void main(String[] args) {

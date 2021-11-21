@@ -1,6 +1,6 @@
-package algorytmy;
+package exercises;
 
-/*ZLOZONOSC TEGO ALGORYTMU 3*/
+/*ZLOZONOSC TEGO ALGORYTMU 3N*/
 
 import java.util.Arrays;
 
@@ -12,6 +12,7 @@ public class Ex19 {
 
         System.out.println(Arrays.toString(twoMaxElements(tab)));
         System.out.println(Arrays.toString(twoMaxElements(tab1)));
+
     }
 
     public static int[] twoMaxElements(int[] array) {

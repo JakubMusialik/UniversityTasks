@@ -1,4 +1,4 @@
-package algorytmy;
+package exercises;
 
 public class Ex21 {
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class Ex21 {
         System.out.println(caseE(caseE, 3));
         System.out.println(caseF(caseF, 3));
     }
-    /*ZLOZONOSC ALGORYTMU 2n*/
+    /*ZLOZONOSC ALGORYTMU 2N*/
 
     public static double caseA(int[] array, int n) {
 
@@ -29,7 +29,7 @@ public class Ex21 {
         return sum;
     }
 
-    /*ZLOZONOSC ALGORYTMU 2n*/
+    /*ZLOZONOSC ALGORYTMU 2N*/
 
     public static double caseB(int[] array, int n) {
 
@@ -41,7 +41,7 @@ public class Ex21 {
         return product;
     }
 
-    /*ZLOZONOSC ALGORYTMU 2*/
+    /*ZLOZONOSC ALGORYTMU 2N*/
 
     public static double caseC(int[] array) {
 
@@ -54,7 +54,7 @@ public class Ex21 {
         return avg;
     }
 
-    /*ZLOZONOSC ALGORYTMU 3*/
+    /*ZLOZONOSC ALGORYTMU 3N*/
 
     public static double caseD(int[] array) {
 
@@ -71,7 +71,7 @@ public class Ex21 {
         return avg;
     }
 
-    /*ZLOZONOSC ALGORYTMU 3*/
+    /*ZLOZONOSC ALGORYTMU 3N*/
 
     public static double caseE(int[][] array, int n) {
 
@@ -89,7 +89,7 @@ public class Ex21 {
         return productSum;
     }
 
-    /*ZLOZONOSC ALGORYTMU 3*/
+    /*ZLOZONOSC ALGORYTMU 3N*/
 
     public static double caseF(int[][] array, int n) {
 

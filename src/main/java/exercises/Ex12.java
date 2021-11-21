@@ -1,12 +1,12 @@
-package algorytmy;
+package exercises;
 
-/*ZLOZONOSC TEGO ALGORYTMU 1*/
+/*ZLOZONOSC TEGO ALGORYTMU 2N*/
 
 public class Ex12 {
     public static void main(String[] args) {
 
         int[] tab = {3, 5, 7, 2, 8, 1, 4};
-        int[] tab1 = {4, 6, 21, 33, 46, 0, 211};
+        int[] tab1 = {2, 6, 21, 33, 46, 0, 211};
 
         System.out.println(getMin(tab));
         System.out.println(getMin(tab1));

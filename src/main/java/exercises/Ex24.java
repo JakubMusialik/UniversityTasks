@@ -1,4 +1,4 @@
-package algorytmy;
+package exercises;
 
 public class Ex24 {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package algorytmy;
+package exercises;
 
-/*ZLOZONOSC TEGO ALGORYTMU 3*/
+/*ZLOZONOSC TEGO ALGORYTMU 3N*/
 
 import java.util.Arrays;
 
