@@ -1,6 +1,8 @@
 package podstawy_programowania_komputerow;
 
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Ex8 {
     public static void main(String[] args) {
@@ -8,16 +10,15 @@ public class Ex8 {
         int min = 1;
         int range = 10;
         int random = (int) (Math.random() * range) + min;
-
-        int counter = 0;
+        Set<Integer> answers = new HashSet<>();
 
         System.out.println("Zgadnij liczbe !");
 
         while(true) {
             int answer = sc.nextInt();
-            counter++;
+             answers.add(answer);
             if(answer == random){
-                System.out.println("Brawo! udało Ci się za " + counter + " razem :)");
+                System.out.println("Brawo! udało Ci się za " + answers.size() + " razem :)");
                 break;
             } else if(answer>random){
                 System.out.println("Podana liczba jest większa od zwycięskiej liczby!");
