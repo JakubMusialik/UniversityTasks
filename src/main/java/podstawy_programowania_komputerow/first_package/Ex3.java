@@ -1,8 +1,8 @@
-package podstawy_programowania_komputerow;
+package podstawy_programowania_komputerow.first_package;
 
 import java.util.Scanner;
 
-public class Ex4 {
+public class Ex3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -12,9 +12,7 @@ public class Ex4 {
         int yourNumber = sc.nextInt();
         int output = 0;
         for (int i = 1; i <= yourNumber; i++) {
-            if (i % 3 == 0 || i % 5 == 0) {
-                output += i;
-            }
+            output += i;
         }
         System.out.println("Wynik to: " + output);
         System.out.println("*-----------------------------------*");
@@ -26,9 +24,7 @@ public class Ex4 {
         int output2 = 0;
         int counter = 1;
         while (counter <= yourNumber2) {
-            if (counter % 3 == 0 || counter % 5 == 0) {
-                output2 += counter;
-            }
+            output2 += counter;
             counter++;
         }
         System.out.println("Wynik to: " + output2);
@@ -41,12 +37,10 @@ public class Ex4 {
         int output3 = 0;
         int counter2 = 1;
         do {
-            if (counter2 % 3 == 0 || counter2 % 5 == 0) {
-                output3 += counter2;
-            }
+            output3 += counter2;
             counter2++;
         } while (counter2 <= yourNumber3);
         System.out.println("Wynik to: " + output3);
     }
 }
-//4. Zmodyfikuj poprzedni program tak, aby w sumie były uwzględniane tylko wielokrotności trzech lub pięciu, np. 3, 5, 6, 9, 10, 12, 15 dla n = 17
+//3.Napisz program, który zapyta użytkownika o liczbę n i wypisze sumę liczb od 1 do n w trzech wersjach używając pętli for/while/do while.

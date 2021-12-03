@@ -1,4 +1,4 @@
-package podstawy_programowania_komputerow;
+package podstawy_programowania_komputerow.first_package;
 
 import java.util.HashSet;
 import java.util.Scanner;

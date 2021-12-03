@@ -1,4 +1,4 @@
-package podstawy_programowania_komputerow;
+package podstawy_programowania_komputerow.first_package;
 
 public class Ex9 {
     public static void main(String[] args) {
