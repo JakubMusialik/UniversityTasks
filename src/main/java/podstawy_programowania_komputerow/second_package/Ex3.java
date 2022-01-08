@@ -31,7 +31,7 @@ public class Ex3 {
 
         str = str + " ";
 
-        String longestword = "";
+        String longestWord = "";
         StringBuilder word = new StringBuilder();
 
         int length;
@@ -40,7 +40,6 @@ public class Ex3 {
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
 
-
             if (ch != ' ')
                 word.append(ch);
             else {
@@ -48,11 +47,11 @@ public class Ex3 {
                 if (checkPalindrome(word.toString()) &&
                         length > length1) {
                     length1 = length;
-                    longestword = word.toString();
+                    longestWord = word.toString();
                 }
                 word = new StringBuilder();
             }
         }
-        return longestword;
+        return longestWord;
     }
 }

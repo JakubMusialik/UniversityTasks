@@ -14,21 +14,21 @@ public class Lotto {
         System.out.println("Podaj 6 szczęśliwych liczb z zakresu 1-49: ");
 
         int[] playerNumbers = new int[6];
-        try {                                                                     //try-catch dla pewnosci jakby gracz wpisal cos innego niz liczbe
-            for (int i = 0; i < playerNumbers.length; i++) {                      //loop po pętli
-                int yourNumber = sc.nextInt();                                    //skaner do wprowadzenia liczby
-                for (int j = 0; j < i; j++) {                                     //zagniezdzony loop sprawdzajacy indeksy czy nie sa takie same
-                    if (playerNumbers[j] == yourNumber) {                         //jesli podana liczba juz jest w tablicy
-                        System.out.println("Podałeś już taką liczbę!");           //info
-                        yourNumber = sc.nextInt();                                //podajemy kolejna liczbe
-                        j = -1;                                                   //reset petli zeby sprawdzac nastepne liczby
+        try {
+            for (int i = 0; i < playerNumbers.length; i++) {
+                int yourNumber = sc.nextInt();
+                for (int j = 0; j < i; j++) {
+                    if (playerNumbers[j] == yourNumber) {
+                        System.out.println("Podałeś już taką liczbę!");
+                        yourNumber = sc.nextInt();
+                        j = -1;
                     }
-                    playerNumbers[i] = yourNumber;                                //przypisujemy wartosc do indeksu
+                    playerNumbers[i] = yourNumber;
                 }
-                if (yourNumber < 50 && yourNumber > 0) {                          //jesli podany numer miesci sie w zakresie
-                    playerNumbers[i] = yourNumber;                                //zapisujemy do tablicy
+                if (yourNumber < 50 && yourNumber > 0) {
+                    playerNumbers[i] = yourNumber;
                 } else {
-                    System.out.println("Tylko liczby z przedziału 1-49!");        //jesli liczba z innego przedzialu niz wymagany to cofamy i i przypisujemy nastepna liczbe
+                    System.out.println("Tylko liczby z przedziału 1-49!");
                     i -= 1;
                 }
             }
@@ -40,15 +40,15 @@ public class Lotto {
             int[] randomNumbers = new int[6];
             Random random = new Random();
             int randomInt;
-            for (int i = 0; i < randomNumbers.length; i++) {                                  //loop po dlugosci tablicy
+            for (int i = 0; i < randomNumbers.length; i++) {
                 randomInt = random.nextInt(49) + 1;
-                for (int j = 0; j < i; j++) {                                                 //zagniezdzony loop do sprawdzania duplikatow
-                    if (randomNumbers[j] == randomInt) {                                      //sprawdzamy czy zapisana wartosc jest taka sama jak wartosc zmiennej
-                        randomInt = random.nextInt(49) + 1;                            //jesli tak to losujemy nowa liczbe
-                        j = -1;                                                              //reset petli
+                for (int j = 0; j < i; j++) {
+                    if (randomNumbers[j] == randomInt) {
+                        randomInt = random.nextInt(49) + 1;
+                        j = -1;
                     }
                 }
-                randomNumbers[i] = randomInt;                                                 //przypisujemy zmienna do tablicy pod i indeks
+                randomNumbers[i] = randomInt;
             }
             System.out.println("Zwycięskie liczby to: " + Arrays.toString(randomNumbers));
 
@@ -56,9 +56,9 @@ public class Lotto {
             /*=============================PORÓWNYWANIE TABLIC=========================================*/
 
             int counter = 0;
-            for (int i = 0; i < playerNumbers.length; i++) {                        //loop po tablicy gracza
-                for (int j = 0; j < randomNumbers.length; j++) {                    //loop po tablicy komputera
-                    if (playerNumbers[i] == randomNumbers[j]) {                     //porownanie wartosci, jesli takie same zwiekszamy licznik
+            for (int i = 0; i < playerNumbers.length; i++) {
+                for (int j = 0; j < randomNumbers.length; j++) {
+                    if (playerNumbers[i] == randomNumbers[j]) {
                         counter++;
                     }
                 }

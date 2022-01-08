@@ -23,7 +23,6 @@ public class Ex11 {
     }
 }
 
-
 //Należy napisać program, który w zależności od wybranej opcji dokonuje zamiany podanej liczby naturalnej n podanej w systemie dziesiętnym,
 // na liczbę w systemie szesnastkowym lub liczby w systemie szesnastkowym s, na liczbę w systemie dziesiętnym.
 // Liczba n podawana jest przez użytkownika i mieści się w przedziale <0,65535>,
